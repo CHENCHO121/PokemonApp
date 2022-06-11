@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import users from "./Users";
 
 function MapData(props) {
     let [description, setDes] = useState('');
@@ -31,6 +32,14 @@ function MapData(props) {
         window.location.reload();
     }
 
+// random userr
+    const randomUser = (user) => {
+        const randIndex = Math.floor(Math.random() * user.length);
+        const username = user[randIndex];
+        return username;
+      };
+      const result = randomUser(users);
+
     return (
         <>
             {props.arr && props.arr.map((elem, idx) => {
@@ -38,7 +47,7 @@ function MapData(props) {
                     <div className="col-3 pokemonDiv m-1" key={idx}>
                         <div className="row">
                             <div className="col m-2">
-                                <h3>{elem.name} the Pikachu</h3>
+                                <h3> {result.name} the <span className="poke-name">{elem.name}</span> </h3>
                                 <img src={elem.sprites.front_default} width="160px" height="160px" />
                             </div>
                         </div>

@@ -24,3 +24,7 @@ h5, h6 {
     margin: 20px;
     font-weight: 500;
 }
+
+.poke-name{
+    text-transform: capitalize;
+}
