@@ -1,0 +1,26 @@
+body {
+    overflow-x: hidden;
+}
+
+.ddl {
+    background-color: rgb(205, 205, 205);
+    width: 50%;
+    margin-left: 25%;
+}
+
+.pokemonDiv {
+    background-color: #7ED957;
+    border-radius: 5px;
+}
+
+h5, h6 {
+    font-weight: 700;
+    margin: 0px;
+}
+
+.button {
+    background-color: #F8482A;
+    color: white;
+    margin: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,14 @@
+.modal {
+    margin-top: 15%;
+}
+
+label, input, h1, p {
+    text-align: left;
+    float: left;
+    margin: 5px;
+}
+
+.btn {
+    margin: 1%;
+    float: left;
+}
